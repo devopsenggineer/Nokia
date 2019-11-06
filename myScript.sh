@@ -7,6 +7,7 @@ echo " "
 echo "$jar"
 
 echo " "
+cat ./src/main/docker/Dockerfile
 #sed -i "s|build/libs/.*|build/libs/$jar\'|g" ./build.gradle
 
 sed -i "s|ADD\ .*|ADD\  $jar\ bot.jar|g" ./src/main/docker/Dockerfile
