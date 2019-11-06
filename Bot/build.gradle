@@ -1,0 +1,11 @@
+
+
+task startScript() {
+  doLast {
+     exec {
+          executable "./myScript.sh"
+      }
+  }
+}
+
+
